@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: 'aleolight';
+    src: url('../fonts/aleo-light-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/aleo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+    padding-top: 50px;
+    font-family: 'aleoregular';
+}
+p{
+    margin: 15px 0;
+    text-align: center;
+}
+h1 {
+    font-family: 'aleobold';
+    font-size: 21px;
+    margin: 12px 0 0;
+}
+h1:before{
+    content: "";
+    padding: 0 12px;
+    background: url(../images/layout/logo.png) no-repeat 46% 50%;
+    background-size: contain;
+}
+h1:after{
+    content: "";
+    display: block;
+    width: 24%;
+    margin: 2% 40%;
+    border-bottom: 2px solid #e7e7e6;
+}  
+h4{
+  margin: 13px 0px;
+}
+
+/*====================================================================
+   Navigation
+ ====================================================================*/
+nav{
+    background:  #171813; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #171813, #333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #171813, #333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #171813, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #171813, #333); /* Standard syntax (must be last) */
+}
+.logo img{
+     height: 47px;
+    margin-top: -14px;
+
+}
+.navbar{
+    margin-bottom: -16px;
+    min-height: 0;
+}
+.navbar-default .navbar-text {
+    color: #5cb85c;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #f5f5f5;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #43c537;
+    background-color: transparent;
+}
+.navbar-default .top-nav.open>a, .open>a:focus, .open>a:hover{
+   
+    background-color: #3cad3e;
+    background: -webkit-linear-gradient(  #3cad3e, #d5d5d3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  #3cad3e,#d5d5d3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(  #3cad3e, #d5d5d3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  #3cad3e, #d5d5d3); /* Standard syntax (must be last) */
+}
+.btn-default {
+    float: right;
+}
+/*====================================================================
+  SLIDER
+ ====================================================================*/
+
+.slider{
+  background-color: #3cad3e;
+    background: -webkit-linear-gradient(  #3cad3e, #d5d5d3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  #3cad3e,#d5d5d3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(  #3cad3e, #d5d5d3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  #3cad3e, #d5d5d3); /* Standard syntax (must be last) */
+}
+img.background-image{
+  
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-height: 350px;
+}
+.glyphicon-chevron-left:before {
+  content: "";
+}
+.carousel-control.left {
+  background: url('../images/layout/arrow-left.png') no-repeat center center;
+  width: 5%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+.glyphicon-chevron-right:before {
+  content: "";
+}
+.carousel-control.right {
+  background: url('../images/layout/arrow-right.png') no-repeat center center;
+  width: 5%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+}
+.carousel-caption{
+  left: 0%;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.carousel-text{
+  font-size: 14px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #000000;
+  line-height: 20px;
+}
+/*====================================================================
+  SHOPPING CART
+ ====================================================================*/
+ table th{
+  background-color: rgba(144, 238, 144, 0.96);
+ }
+/*====================================================================
+  REGISTER AND LOGIN FORM
+ ====================================================================*/
+.reg_form{
+     border: solid 2px #444;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    background: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3b3d4a, black);
+    padding: 15px;
+}
+.login_form{
+     border: solid 2px #444;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    background: grey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3b3d4a, black);
+    padding: 15px;
+}
+input#name{
+     
+     background:  #fff url("../images/layout/login1.png")  no-repeat;
+     background-size: 32px 32px;
+}
+input#email{
+     
+     background:  #fff url("../images/layout/mail.png")  no-repeat;
+     background-size: 32px 32px;
+}
+input#password{
+     
+     background:  #fff url("../images/layout/login-icon.png")  no-repeat;
+     background-size: 32px 32px;
+}
+
+legend{
+    margin: 0 0 15px ;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+input.form-control{
+    border-radius: 5px;
+    border: solid 1px #444;
+    width: 97%;
+    font-size: 1em;
+    padding: 10px 8px 6px 24px;
+    -moz-box-shadow: 0px 1px 0px #777;
+    -webkit-box-shadow: 0px 1px 0px #777;
+    text-indent: 14px;  
+}
+label.login-form{
+    margin: 0 0 15px;
+    color: #fff;
+}
+img.basket{
+    width: 27px;
+    height: 24px;
+    z-index: 45;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+img.img-thumb{
+    width: auto;
+    height: 200px;
+    
+}
+span.delete.btn-warning {
+    color: #fff;
+    background-color: #f04e4e;
+    border-color: #eea236;
+}
+
+/*====================================================================
+  FOOTER
+ ====================================================================*/
+ footer {
+    background:  #171813; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#333, #171813 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #333, #171813 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #333, #171813 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333, #171813 ); /* Standard syntax (must be last) */
+    margin: 50px 0 0;
+}
+footer p {
+    color: #d3d3d3;
+    font-size: 12px;
+    padding: 3px 0px;
+}
+/*====================================================================
+MEDIA QUERIES
+ ====================================================================*/
+@media (max-width: 767px){
+  .navbar-nav {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    border: none;
+    background: none;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #ccffcc;
+     text-align: center;
+     text-transform: lowercase;
+     font-size: 16px;
+}
+  #nav-icon {
+    height: 45px;
+  }
+}
