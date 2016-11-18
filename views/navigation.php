@@ -24,7 +24,7 @@ session_start();
                <?php if (isset($_SESSION['usr_id'])) { ?>
                           <li><p class="navbar-text">Welcome <?php echo $_SESSION['usr_name']; ?></p></li>
                           <li><a href="logout.php">Log Out</a></li>
-                          <li><a href="shopping-cart.php" style="display: inline-block; "><img src="images/layout/cart.png" class="basket" alt="cart" /></a></li>
+                          <li><a href="shopping-cart.php" style="display: inline-block; "><img src="" class="basket" alt="cart" /></a></li>
                   <?php 
                           } 
                           else { ?>

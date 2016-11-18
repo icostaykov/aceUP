@@ -11,6 +11,7 @@ if (isset($_POST['submit'])){
 	$cpassword = mysqli_real_escape_string($conn, $_POST['cpassword']);
 	$data = file_get_contents($_FILES["photo"]["tmp_name"]);
     $encoded_data = base64_encode($data);
+
 	if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
 		$error = true;
 		$name_error = "Name must contain only alphabets and space";
@@ -29,7 +30,7 @@ if (isset($_POST['submit'])){
 		$cpassword_error = "Password does not match";
 	}
 	if (!$error) {
-		if (mysqli_query($conn, "INSERT INTO user(name, email, password) 
+		if (mysqli_query($conn, "INSERT INTO user(name, email, password, images) 
 			VALUES ('". $name . "', '". $email . "', '". md5($password) . "', '".$encoded_data."' )")) {
 			$success_msg = "Successfully registered! <a href='login.php'>Click here to Login </a>";
 		}

@@ -5,8 +5,10 @@ include 'db/connect.php';
 if (isset($_POST['login'])) {
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
 	$password = mysqli_real_escape_string($conn, $_POST['password']);
-	$result = mysqli_query($conn, "SELECT * FROM users WHERE email = '". $email ."' AND password = '". md5($password) ."' ");
-
+	
+	
+	$result = mysqli_query($conn, "SELECT * FROM user WHERE email = '". $email ."' AND password = '". md5($password) ."' ");
+	var_dump($result);
 	if ($row = mysqli_fetch_array($result)) {
 		$_SESSION['usr_id'] = $row['id'];
 		$_SESSION['usr_name'] = $row['name'];
