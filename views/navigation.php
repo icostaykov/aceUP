@@ -5,7 +5,7 @@ session_start();
 ?> 
 <nav class="navbar navbar-default navbar-fixed-top" role="menu">
   <div class="container">
-    <a href="index.php" class="navbar-brand logo" title="logo"><img src="images/layout/aceupLogo-02.png" alt="logo"/></a>
+    <a href="account.php" class="navbar-brand logo" title="logo"><img src="images/layout/aceupLogo-02.png" alt="logo"/></a>
     <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" id="nav-icon" aria-expanded="false">
@@ -17,7 +17,7 @@ session_start();
             </div>
          <div class="collapse navbar-collapse" id="collapse-1">
             <ul class="nav navbar-nav navbar-left top-nav">
-               <li><a href="challenges.php">Challenges</a></li>
+               <li><a href="challanges.php">Challenges</a></li>
                 <li><a href="rivals.php"></a>Rivals</li>
                 <li><a href="rates.php">Rates</a></li>
                 <li><a href="accessories.php">Accessories</a></li>
