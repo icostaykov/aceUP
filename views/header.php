@@ -4,7 +4,7 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="images/layout/background3.png" title="background-image" class="background-image" alt="background-image"/>
+				<img src="images/layout/aceup-03.png" title="background-image" class="background-image" alt="background-image"/>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-7">
@@ -18,7 +18,7 @@
 				</div>	
 			</div>
 			<div class="item">
-			   <img src="images/layout/background2.png" title="background-image"  class="background-image" alt="background-image"/>
+			   <img src="images/layout/aceup-03.png" title="background-image"  class="background-image" alt="background-image"/>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-7">

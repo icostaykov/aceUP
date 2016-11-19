@@ -50,10 +50,17 @@ include 'views/header.php';
 					    <input type="password" class="form-control" name="cpassword" id= "cpassword" placeholder="Confirm Password"/>
 					    <span class="text-danger"><?php if (isset($cpassword_error)) echo $cpassword_error; ?></span>
 					  </div>
- 					  <div class="form-group">
-					    <label for="name" class="login-form">Confirm Password</label>
-					    <input type="file" class="form-control" name="photo" id= "photo" />
-					    <span class="text-danger"><?php if (isset($cpassword_error)) echo $cpassword_error; ?></span>
+					  <div class="form-group">
+					    <label for="name" class="login-form">Upload Photo</label>
+					    <input type="file" name="image" id="photo" >
+					  </div>
+					  <div class="form-group">
+					    <label for="select" class="login-form">Select a character</label>
+					    <select name="animal">
+						  <option value="cat" >Cat</option>
+						  <option value="dog">Dog</option>
+						  <option value="parrot" >Parrot</option>
+						</select>
 					  </div>
  					  <div class="form-group">
                         <input type="submit" name="submit" value="Sign Up" class="btn btn-primary" />

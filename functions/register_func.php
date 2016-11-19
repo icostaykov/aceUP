@@ -9,8 +9,9 @@ if (isset($_POST['submit'])){
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
 	$password = mysqli_real_escape_string($conn, $_POST['password']);
 	$cpassword = mysqli_real_escape_string($conn, $_POST['cpassword']);
-	$data = file_get_contents($_FILES["photo"]["tmp_name"]);
+	$data = file_get_contents($_FILES["image"]["tmp_name"]);
     $encoded_data = base64_encode($data);
+    $animals = mysqli_real_escape_string($conn, $_POST['animal']);
 
 	if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
 		$error = true;
@@ -30,8 +31,8 @@ if (isset($_POST['submit'])){
 		$cpassword_error = "Password does not match";
 	}
 	if (!$error) {
-		if (mysqli_query($conn, "INSERT INTO user(name, email, password, images) 
-			VALUES ('". $name . "', '". $email . "', '". md5($password) . "', '".$encoded_data."' )")) {
+		if (mysqli_query($conn, "INSERT INTO user(name, email, password, images, type_of_animal) 
+			VALUES ('". $name . "', '". $email . "', '". md5($password) . "', '".$encoded_data."', '".$animals."')")) {
 			$success_msg = "Successfully registered! <a href='login.php'>Click here to Login </a>";
 		}
 		else{

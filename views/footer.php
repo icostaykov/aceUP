@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<p> &copy; 2016 Kristina Nikiforova.All rights reserved.</p>
+				<p> &copy; 2016 Torba s Banani.All rights reserved.</p>
 			</div>
 		</div>
 	</div>
