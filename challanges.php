@@ -18,6 +18,7 @@ if(isset($_POST['submit_photo'])){
 
     mysqli_query($conn, "INSERT INTO pending_challenges(challenge_image,user_id,challenge_id) 
 			VALUES ('". $encoded_data . "', '".$user."',7)");
+ 
 
 }
 
@@ -26,7 +27,7 @@ if(isset($_POST['submit_photo'])){
   <div class="container" >
     <div class="row">
                  <div class="lower-nav" ><a style="color:#000; " href="challanges.php">Challenges</a></div>
-                  <div class="lower-nav"><a href="rivals.php"></a>Rivals</div>
+                  <div class="lower-nav"><a href="rivals.php">Rivals</a></div>
                   <div class="lower-nav"><a href="rates.php">Rate</a></div>
                   <div class="lower-nav"><a href="accessories.php">Accessories</a></div>
                   <div class="lower-nav"><a href="help.php">Help</a></div>
@@ -52,7 +53,8 @@ if(isset($_POST['submit_photo'])){
           	}
           ?>
           		<input type="file" name="upload" >
-             <input type="submit" name="submit_photo" class="btn btn-primary pull-right" />
+             <input type="submit" name="submit_photo" class="btn btn-primary pull-right"   />
+
           </form>
        </div>
 	</div>
