@@ -16,7 +16,6 @@ session_start();
                 </button>        
             </div>
          <div class="collapse navbar-collapse" id="collapse-1">
-           
            <!-- END of top-nav-->
             <ul class="nav navbar-nav navbar-right">
                <?php if (isset($_SESSION['usr_id'])) { ?>
