@@ -3,29 +3,32 @@
    License: none (public domain)
 */
 @font-face {
-    font-family: 'aleolight';
-    src: url('../fonts/aleo-light-webfont.woff2') format('woff2'),
-         url('../fonts/aleo-light-webfont.woff') format('woff');
+    font-family: 'phenomenabold';
+    src: url('../fonts/phenomena-bold-webfont.woff2') format('woff2'),
+         url('../fonts/phenomena-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'aleoregular';
-    src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
-         url('../fonts/aleo-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+html {
+    position: relative;
+    min-height: 100%;
 }
-@font-face {
-    font-family: 'aleobold';
-    src: url('../fonts/aleo-bold-webfont.woff2') format('woff2'),
-         url('../fonts/aleo-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+footer {
+    background-color: #e87126;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
 }
+
+footer>div>div{
+  line-height:60px;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,15 +55,19 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body{
-    padding-top: 50px;
-    font-family: 'aleoregular';
+    padding-top: 53px;
+    background-color: rgb(251,235,210);
+    margin: 0 0 100px; /* bottom = footer height */
+  
+    font-family: 'phenomenabold';
+    font-size:20px;
 }
 p{
     margin: 15px 0;
     text-align: center;
 }
 h1 {
-    font-family: 'aleobold';
+    
     font-size: 21px;
     margin: 12px 0 0;
 }
@@ -81,6 +88,13 @@ h4{
   margin: 13px 0px;
 }
 
+.row{display:flex;}
+
+.col{
+  flex:1;
+  padding: 1em;
+  border:solid;
+}
 /*====================================================================
    Navigation
  ====================================================================*/
@@ -126,11 +140,11 @@ nav{
  ====================================================================*/
 
 .slider{
-  background-color: #3cad3e;
-    background: -webkit-linear-gradient(  #3cad3e, #d5d5d3); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(  #3cad3e,#d5d5d3); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(  #3cad3e, #d5d5d3); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(  #3cad3e, #d5d5d3); /* Standard syntax (must be last) */
+    background-color: rgb(251,235,210);
+    background: -webkit-linear-gradient(rgb(254,148,84) , rgb(251,235,210) ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(  rgb(254,148,84) , rgb(251,235,210) ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(254,148,84) , rgb(251,235,210) ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(  rgb(254,148,84)  , rgb(251,235,210) ); /* Standard syntax (must be last) */
 }
 img.background-image{
   
@@ -253,18 +267,18 @@ img.attributes{
 }
 /*====================================================================
   FOOTER
- ====================================================================*/
+ ====================================================================
  footer {
-    background:  #171813; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#333, #171813 ); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( #333, #171813 ); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient( #333, #171813 ); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#333, #171813 ); /* Standard syntax (must be last) */
+    background:  #171813; /* For browsers that do not support gradients 
+    background: -webkit-linear-gradient(#333, #171813 ); /* For Safari 5.1 to 6.0 
+    background: -o-linear-gradient( #333, #171813 ); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient( #333, #171813 ); /* For Firefox 3.6 to 15 
+    background: linear-gradient(#333, #171813 ); /* Standard syntax (must be last) 
     margin: 50px 0 0;
-}
+}*/
 footer p {
-    color: #d3d3d3;
-    font-size: 12px;
+    color: #fff;
+    font-size: 20px;
     padding: 3px 0px;
 }
 /*====================================================================
@@ -291,3 +305,56 @@ MEDIA QUERIES
     height: 45px;
   }
 }
+
+
+
+.icons{
+
+  position: relative;
+}
+
+.icon-label{
+position: absolute;
+width: 20px;
+height: 20px;
+font-size:16px;
+border-radius: 50%;
+background-color: tomato;
+top: 10px;
+left: 10px;
+color: white;
+text-align: center;
+}
+
+.lower-nav{
+  width:25%;
+background: rgba(236,166,32,1);
+background: -moz-linear-gradient(left, rgba(236,166,32,1) 0%, rgba(236,149,31,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(236,166,32,1)), color-stop(100%, rgba(236,149,31,1)));
+background: -webkit-linear-gradient(left, rgba(236,166,32,1) 0%, rgba(236,149,31,1) 100%);
+background: -o-linear-gradient(left, rgba(236,166,32,1) 0%, rgba(236,149,31,1) 100%);
+background: -ms-linear-gradient(left, rgba(236,166,32,1) 0%, rgba(236,149,31,1) 100%);
+background: linear-gradient(to right, rgba(236,166,32,1) 0%, rgba(236,149,31,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eca620', endColorstr='#ec951f', GradientType=1 );
+text-align: center;
+height:30px;
+line-height: 30px;
+color:#fff;
+}
+
+.lower-nav>a{
+color:#fff;
+}
+
+.lower-nav>a:hover{
+  text-decoration:none;
+color:#fff;
+}
+.completed_challenges{
+  text-align: right;
+}
+
+#container-nav{
+background-color: #e87126;
+height:30px;
+  }
